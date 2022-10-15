@@ -1,9 +1,11 @@
 
 # Midsemester Ex(j)am
 - Theme: We Fly
+- Made using Godot 3.5, and Paint.net.
+
 
 ## Features and Controls
-
+- The player will follow the mouse movement!
 ***
 
 
@@ -12,7 +14,7 @@
 
 ### Self-Assessment
 
-- [ ] D-1: The repository contains a <code>README.md</code> file in its top-level directory.
+- [X] D-1: The repository contains a <code>README.md</code> file in its top-level directory.
 - [ ] D-2: The project content is eligible for an <a href="https://www.esrb.org/ratings-guide/">ESRB Rating</a> of M or less.
 - [ ] C-1: Your repository is well-formed, in our course organization, with an appropriate <code>.gitignore</code> file, no unnecessary files tracked, and all commit messages following <a href="https://cbea.ms/git-commit/">our commit message style guide</a>.
 - [ ] C-2: Your release is tagged using <a href="https://semver.org/">semantic versioning</a> where the major version is zero, the minor version is the iteration number, the patch version is incremented as usual for each change made to the minor version, and the release name matches the release tag.
