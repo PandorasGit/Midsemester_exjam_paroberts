@@ -6,9 +6,12 @@
 
 
 ## Features and Controls
-- The player will follow the mouse movement!
+- The player will follow the mouse movement! Click to make the Airplane approach where you clicked on screen!
+- Get to the end of the level!
 ***
 
+## Third Pary Assets
+- In code tween's inspired by [this tutorial](https://youtu.be/dPYRmzu0c
 
 ### Reflection
 
