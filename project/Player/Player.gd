@@ -46,3 +46,4 @@ func _die() -> void:
 
 func _on_DeathTimer_timeout():
 	emit_signal("killed")
+
