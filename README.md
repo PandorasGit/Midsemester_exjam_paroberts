@@ -28,5 +28,5 @@
 - [ ] B-1: The project report is complete.
 - [ ] B-2: The project runs with neither errors nor warnings.
 - [ ] B-3: The source code and project structure comply with our adopted style guides.
-- [ ] B-4: The game is playable with clear goals and end state.
-- [ ] A-1: The game includes a complete traditional player experience loop&mdash;title, gameplay, and ending&mdash;and the player has the option to play again.
+- [X] B-4: The game is playable with clear goals and end state.
+- [X] A-1: The game includes a complete traditional player experience loop&mdash;title, gameplay, and ending&mdash;and the player has the option to play again.

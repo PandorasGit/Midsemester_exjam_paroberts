@@ -2,10 +2,10 @@ extends Area2D
 
 
 signal killed
+signal won
 
 
 var _is_alive := true
-
 
 
 onready var _death_timer := find_node("DeathTimer")
@@ -31,6 +31,8 @@ func _move() -> void:
 func _on_Airplane_body_entered(body) -> void:
 	if body.is_in_group("spikes"):
 		_die()
+	elif body.is_in_group("goal"):
+		_win()
 
 
 func _die() -> void:
@@ -45,7 +47,10 @@ func _die() -> void:
 	_death_timer.start()
 
 
-
-func _on_DeathTimer_timeout():
+func _on_DeathTimer_timeout() -> void:
 	emit_signal("killed")
 
+
+func _win() -> void:
+	_is_alive = false
+	emit_signal("won")
