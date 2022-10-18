@@ -50,3 +50,6 @@ position = Vector2( 2941, 614 )
 position = Vector2( 563, 326 )
 
 [node name="HUD" parent="." instance=ExtResource( 4 )]
+
+[node name="Goal2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 622, 315 )
