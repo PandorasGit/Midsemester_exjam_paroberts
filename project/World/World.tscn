@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/spike.png" type="Texture" id=2]
 [ext_resource path="res://World/World.gd" type="Script" id=3]
 [ext_resource path="res://HUD/HUD.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Goal/Goal.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Background/Background.tscn" type="PackedScene" id=6]
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
 points = PoolVector2Array( 16, 16, 0, 16, 7.32975, 0, 8.69276, 0 )
@@ -34,6 +35,8 @@ points = PoolVector2Array( 16, 16, 0, 16, 7.32975, 0, 8.69276, 0 )
 
 [node name="World" type="Node2D"]
 script = ExtResource( 3 )
+
+[node name="Background" parent="." instance=ExtResource( 6 )]
 
 [node name="Spikes" type="TileMap" parent="." groups=["spikes"]]
 scale = Vector2( 4, 4 )
