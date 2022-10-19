@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/spike.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://HUD/HUD.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Goal/Goal.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Background/Background.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Common/PressStart2P-Regular.ttf" type="DynamicFontData" id=7]
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
 points = PoolVector2Array( 16, 16, 0, 16, 7.32975, 0, 8.69276, 0 )
@@ -33,6 +34,9 @@ points = PoolVector2Array( 16, 16, 0, 16, 7.32975, 0, 8.69276, 0 )
 } ]
 0/z_index = 0
 
+[sub_resource type="DynamicFont" id=4]
+font_data = ExtResource( 7 )
+
 [node name="World" type="Node2D"]
 script = ExtResource( 3 )
 
@@ -55,4 +59,19 @@ position = Vector2( 563, 326 )
 [node name="HUD" parent="." instance=ExtResource( 4 )]
 
 [node name="Goal2" parent="." instance=ExtResource( 5 )]
-position = Vector2( 622, 315 )
+position = Vector2( 99, 545 )
+
+[node name="GoalLabel" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -319.0
+margin_top = 482.0
+margin_right = 545.0
+margin_bottom = 517.0
+size_flags_stretch_ratio = 0.27
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 4 )
+text = "By testing the game 
+with this goal you have cheated :("
+align = 1
+valign = 1
