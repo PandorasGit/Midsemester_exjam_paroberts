@@ -11,6 +11,8 @@ var _is_alive := true
 onready var _death_timer := find_node("DeathTimer")
 onready var _sprite := find_node("Sprite")
 onready var _death_particles := find_node("DeathParticles")
+onready var _death_sound := find_node("DeathSound")
+onready var _win_sound := find_node("WinSound")
 
 
 func _input(event) -> void:
@@ -37,6 +39,7 @@ func _on_Airplane_body_entered(body) -> void:
 
 func _die() -> void:
 	var _death_position := position
+	_death_sound.play()
 	var _tween := create_tween().set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
 	# warning-ignore:return_value_discarded
 	_tween.tween_property(self, "global_position", _death_position, 1)
@@ -52,5 +55,6 @@ func _on_DeathTimer_timeout() -> void:
 
 
 func _win() -> void:
+	_win_sound.play()
 	_is_alive = false
 	emit_signal("won")
