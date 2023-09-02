@@ -2,7 +2,7 @@
 # Midsemester Ex(j)am
 - Theme: We Fly
 - Made using Godot 3.5, Sfxr, LMMS, and Paint.net.
-- Play the latest build [here](https://bsu-cs315.github.io/Midsemester_exjam_waroberts/)
+
 
 
 ## Features and Controls
